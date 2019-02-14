@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "name": "wmdd-get-w5",
+  "env": {
+    "DBHOST": "mydb.cex0dq7ixwkf.us-east-2.rds.amazonaws.com",
+    "DBPORT": "3306",
+    "DBUSER": "shivamall",
+    "DBPASSWORD": "shivamall12",
+    "DBNAME": "movies"
+  },
+  "builds": [
+    { "src": "index.js", "use": "@now/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.js" }
+  ]
+}
